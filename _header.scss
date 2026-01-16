@@ -3,6 +3,53 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    &--line {
+            position: absolute;
+            left: 70px;
+            bottom: 44px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            height:  805px;
+
+            &--text {
+                display: flex;
+                justify-content: space-between;
+                gap: 35px;
+                writing-mode: vertical-rl;
+                text-orientation: mixed;
+                width: 20px;
+                height: 132px;
+                transform: rotate(180deg);
+
+                &--text {
+                    font-family: DM Sans;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    color: #FFFFFF;
+                    box-shadow: 0px 0px 4px 0px #0000001A;
+                }
+
+
+            }
+
+            &--num {
+                transform: rotate(-90deg);
+                font-family: DM Sans;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+                color: #FFFFFF;
+                box-shadow: 0px 0px 4px 0px #0000001A;
+
+                margin-top: 20px;
+                margin-bottom: 240px;
+            }
+        }
+
     &_top {
         width: 100%;
         max-width: 1874px;
@@ -14,9 +61,9 @@
         gap: 64px;
 
         &_container {
-            padding-right: 110px;
             width: 100%;
             max-width: 1503px;
+            padding-right: 110px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -64,51 +111,7 @@
         position: relative;
         padding-top: 195px;
 
-        &--line {
-            position: absolute;
-            left: -204px;
-            bottom: 44px;
-            display: flex;
-            flex-direction: column-reverse;
-            align-items: center;
-
-            &--text {
-                display: flex;
-                justify-content: space-between;
-                gap: 35px;
-                writing-mode: vertical-rl;
-                text-orientation: mixed;
-                width: 20px;
-                height: 132px;
-                transform: rotate(180deg);
-
-                &--text {
-                    font-family: DM Sans;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 100%;
-                    letter-spacing: 0%;
-                    color: #FFFFFF;
-                    box-shadow: 0px 0px 4px 0px #0000001A;
-                }
-
-
-            }
-
-            &--num {
-                transform: rotate(-90deg);
-                font-family: DM Sans;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 100%;
-                letter-spacing: 0%;
-                color: #FFFFFF;
-                box-shadow: 0px 0px 4px 0px #0000001A;
-
-                margin-top: 20px;
-                margin-bottom: 240px;
-            }
-        }
+        
 
         &--box {
             width: 100%;

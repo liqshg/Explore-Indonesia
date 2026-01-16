@@ -10,6 +10,16 @@
 
 <body>
     <header class="header">
+        <div class="header--line">
+            <div class="header--line--text">
+                <p class="header--line--text--text">Fb</p>
+                <p class="header--line--text--text">In</p>
+                <p class="header--line--text--text">Tw</p>
+            </div>
+
+            <p class="header--line--num">01</p>
+            <img class="header--line--img" src="./img/ind-line.svg" alt="line">
+        </div>
         <section class="header_top">
             <img class="header_top--img" src="./img/indonedia-logo.svg" alt="logo">
             <div class="header_top_container">
@@ -27,16 +37,6 @@
         </section>
         <section class="header_main">
             <div class="header_main_container">
-                <div class="header_main_container--line">
-                    <div class="header_main_container--line--text">
-                        <p class="header_main_container--line--text--text">Fb</p>
-                        <p class="header_main_container--line--text--text">In</p>
-                        <p class="header_main_container--line--text--text">Tw</p>
-                    </div>
-
-                    <p class="header_main_container--line--num">01</p>
-                    <img class="header_main_container--line--img" src="./img/ind-line.svg" alt="line">
-                </div>
 
                 <div class="header_main_container--box">
                     <h2 class="header_main_container--box--title">explore indonesia</h2>
@@ -78,15 +78,60 @@
             <div class="about_more"> <!-- картинки опасити 10 -->
                 <div class="about_more_container"> <!-- контейнет 2 дива -->
                     <div class="about_more_container--top"> <!--див бекграунд градиент -->
-                        
+                        <div class="about_more_container--top--info">
+                            <img class="about_more_container--top--info--img" src="./img/walkways.png" alt="walkways">
+                            <div class="about_more_container--top--info--box">
+                                <h2 class="about_more_container--top--info--box--title">The walkways of Indonesia
+                                    spellbind</h2>
+                                <p class="about_more_container--top--info--box--text">Lorem ipsum dolor sit amet,
+                                    consectetur adip iscing elit. Fusce commodo magna et
+                                    libero mollis rhoncus. </p>
+                                <button class="about_more_container--top--info--box--button">Learn More</button>
+                            </div>
+                        </div>
                     </div>
                     <div class="about_more_container--bottom"> <!-- див бекграунд градиент -->
-
+                        <div class="about_more_container--bottom--info">
+                            <div class="about_more_container--bottom--info--box">
+                                <h2 class="about_more_container--bottom--info--box--title">Perfect beaches exude
+                                    relaxation and fun</h2>
+                                <p class="about_more_container--bottom--info--box--text">Lorem ipsum dolor sit amet,
+                                    consectetur adip iscing elit. Fusce commodo magna et
+                                    libero
+                                    mollis rhoncus. </p>
+                                <button class="about_more_container--bottom--info--box--button">Learn More</button>
+                            </div>
+                            <img class="about_more_container--bottom--info--img" src="./img/beaches.png" alt="beaches">
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+        <div class="slider">
+            <button class="arrow left">&#10094;</button>
+
+            <div class="viewport">
+                <div class="track">
+                    <img src="./img/slider1.png" class="slide">
+                    <img src="./img/slider2.png" class="slide">
+                    <img src="./img/slider3.png" class="slide">
+                    <img src="./img/slider1.png" class="slide">
+                    <img src="./img/slider2.png" class="slide">
+                </div>
+            </div>
+
+            <button class="arrow right">&#10095;</button>
+        </div>
+
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
