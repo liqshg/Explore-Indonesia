@@ -1,0 +1,36 @@
+@media (max-width:1950px) {
+    .header {
+        &_main_container {
+            &--bottom {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                max-width: 314px;
+                padding: 35px 71px 30px 32px;
+                margin-bottom: 231px;
+            }
+
+            &--video {
+                width: 314px;
+                height: 191px;
+                
+                &--video {
+
+                }
+
+                &--box {
+                    &--play{
+
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:1800px) {
+        .header {
+            &--line {
+                display: none;
+            }
+        }
+    }
