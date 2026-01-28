@@ -51,7 +51,11 @@
     header {
         .header {
             &_main_container {
+                &--box{
+                    margin: 0 auto;
+                }
                 &--bottom {
+                    margin: 0 auto;
                     display: flex;
                     flex-direction: column;
                     gap: 32px;

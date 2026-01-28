@@ -719,7 +719,11 @@
   }
 }
 @media (max-width: 1300px) {
+  header .header_main_container--box {
+    margin: 0 auto;
+  }
   header .header_main_container--bottom {
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 32px;
