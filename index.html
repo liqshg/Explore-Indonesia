@@ -6,73 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
-    <button id="scrollTopBtn" aria-label="Наверх">
-        ↑
-    </button>
     <header class="header">
-        <div class="header--line">
-            <div class="header--line--text">
-                <p class="header--line--text--text">Fb</p>
-                <p class="header--line--text--text">In</p>
-                <p class="header--line--text--text">Tw</p>
+        <div class="header_top">
+            <img src="./img/logoChocolate.svg" alt="logo">
+            <nav class="header_top_info">
+                <a class="header_top_info--link" href="#">Home</a>
+                <a class="header_top_info--link" href="#">How it’s made?</a>
+                <a class="header_top_info--link" href="#">Our products</a>
+                <a class="header_top_info--link" href="#">Top sellers</a>
+                <a class="header_top_info--link" href="#">Chocolate is loved</a>
+            </nav>
+            <div class="header_top--social">
+                <svg class="header_top--social--svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M17 2H7C4.23858 2 2 4.23858 2 7V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V7C22 4.23858 19.7614 2 17 2Z"
+                        stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+                        stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M16 11.3701C16.1234 12.2023 15.9812 13.0523 15.5937 13.7991C15.2062 14.5459 14.5931 15.1515 13.8416 15.5297C13.0901 15.908 12.2384 16.0397 11.4077 15.906C10.5771 15.7723 9.80971 15.3801 9.21479 14.7852C8.61987 14.1903 8.22768 13.4229 8.09402 12.5923C7.96035 11.7616 8.09202 10.91 8.47028 10.1584C8.84854 9.40691 9.45414 8.7938 10.2009 8.4063C10.9477 8.0188 11.7977 7.87665 12.63 8.00006C13.4789 8.12594 14.2648 8.52152 14.8716 9.12836C15.4785 9.73521 15.8741 10.5211 16 11.3701Z"
+                        stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M17.5 6.5H17.51" stroke="#111111" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M17.5 6.5H17.51" stroke="#111111" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <svg class="header_top--social--svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M23 3.00005C22.0424 3.67552 20.9821 4.19216 19.86 4.53005C19.2577 3.83756 18.4573 3.34674 17.567 3.12397C16.6767 2.90121 15.7395 2.95724 14.8821 3.2845C14.0247 3.61176 13.2884 4.19445 12.773 4.95376C12.2575 5.71308 11.9877 6.61238 12 7.53005V8.53005C10.2426 8.57561 8.50127 8.18586 6.93101 7.39549C5.36074 6.60513 3.51032 4.72313 2.5 3.2845C2.5 3.2845 -1 13 8 17C5.94053 18.398 3.48716 19.099 1 19C10 24 21 19 21 7.50005C20.9991 7.2215 20.9723 6.94364 20.92 6.67005C21.9406 5.66354 22.6608 4.39276 23 3.00005Z"
+                        stroke="#111111" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
             </div>
-
-            <p class="header--line--num">01</p>
-            <img class="header--line--img" src="./img/ind-line.svg" alt="line">
         </div>
-        <section class="header_top">
-            <img class="header_top--img" src="./img/indonedia-logo.svg" alt="logo">
-            <div class="header_top_container">
-                <nav class="header_top_container--info">
-                    <a class="header_top_container--info--link" href="#">destinations</a>
-                    <a class="header_top_container--info--link" href="#">experiences</a>
-                    <a class="header_top_container--info--link" href="#">about</a>
-                    <a class="header_top_container--info--link" href="#">gallery</a>
-                </nav>
-                <div class="header_top_container--box">
-                    <img src="./img/ind-search.svg" alt="search">
-                    <button class="header_top_container--box--brgr"><img src="./img/ind-menu.svg" alt="menu"></button>
+        <div class="header_home">
+            <div class="header_home--line"></div>
+            <div class="header_home_container">
+                <h2 class="header_home_container--title">Treat yourself or a loved one to<br>
+                    our finest ingredients for a moment
+                    of pure delight!</h2>
+                <div class="header_home_container--box">
+                    <button class="header_home_container--box--but1">Buy now</button>
+                    <button class="header_home_container--box--but2">How it’s made</button>
                 </div>
             </div>
-        </section>
-        <div class="header_main_container">
-
-            <div class="header_main_container--box">
-                <h2 class="header_main_container--box--title">explore indonesia</h2>
-                <button class="header_main_container--box--button">Start travelling</button>
-            </div>
-
-            <div class="header_main_container--bottom">
-                <div class="header_main_container--bottom--card">
-                    <p class="header_main_container--bottom--card--num">01</p>
-                    <h3 class="header_main_container--bottom--card--title">Title here</h3>
-                    <p class="header_main_container--bottom--card--text">Lorem ipsum dolor sit amet et amet ist ame.
-                    </p>
-                </div>
-                <div class="header_main_container--bottom--card">
-                    <p class="header_main_container--bottom--card--num">02</p>
-                    <h3 class="header_main_container--bottom--card--title">Title here</h3>
-                    <p class="header_main_container--bottom--card--text">Lorem ipsum dolor sit amet et amet ist ame.
-                    </p>
-                </div>
-                <div class="header_main_container--bottom--card">
-                    <p class="header_main_container--bottom--card--num">03</p>
-                    <h3 class="header_main_container--bottom--card--title">Title here</h3>
-                    <p class="header_main_container--bottom--card--text">Lorem ipsum dolor sit amet et amet ist ame.
-                    </p>
-                </div>
-            </div>
-
-            <div class="header_main_container--video">
-                <img class="header_main_container--video--video" src="./img/ind-videoo.png" alt="">
-                <div class="header_main_container--video--box">
-                    <img class="header_main_container--video--box--play" src="./img/ind-play_arrow.png" alt="play">
-                </div>
+            <div class="header_home_absolute">
+                <p class="header_home_absolute--text">scroll down</p>
+                <button class="header_home_absolute--button"><img src="./img/buttonscroll.svg" alt=""></button>
             </div>
         </div>
     </header>
@@ -205,9 +190,8 @@
             <div class="planning_container">
                 <h2 class="planning_container--title">Getting there</h2>
                 <div class="planning_container_box">
-                    <img class="planning_container_box--absolute" src="./img/Line.png" alt="">
                     <div class="planning_container_box_step1">
-                        <img class="planning_container_box_step1--num" src="./img/Number.png" alt="num">
+                        <img class="planning_container_box_step1--num" src="./img/Number.png" alt="">
                         <div class="planning_container_box_step1--texts">
                             <h3 class="planning_container_box_step1--texts--title">Bookings your flights</h3>
                             <p class="planning_container_box_step1--texts--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in
@@ -216,14 +200,14 @@
                         </div>
                     </div>
                     <div class="planning_container_box_step2">
-                        <img class="planning_container_box_step2--num" src="./img/Number (1).png" alt="num">
+                        <img class="planning_container_box_step2--num" src="./img/Number (1).png" alt="">
                         <div class="planning_container_box_step2--texts">
                             <h3 class="planning_container_box_step2--texts--title">Choosing your hotel</h3>
                             <p class="planning_container_box_step2--texts--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in
                                 lectus tempus, eget tincidunt lacus varius. Sed euismod orci dictum faucibus malesuada.
                                 Praesent sed eros tincidunt, viverra neque auctor, lobortis enim.</p>
                             <div class="planning_container_box_step2--texts--bottom">
-                                <img class="planning_container_box_step2--texts--bottom--img" src="./img/Group 20.png" alt="video">
+                                <img class="planning_container_box_step2--texts--bottom--img" src="./img/Number (2).png" alt="">
                                 <div class="planning_container_box_step2--texts--bottom--right">
                                     <h3 class="planning_container_box_step2--texts--bottom--right--title">Travelling there</h3>
                                     <p class="planning_container_box_step2--texts--bottom--right--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt.</p>
@@ -232,7 +216,7 @@
                         </div>
                     </div>
                     <div class="planning_container_box_step3">
-                        <img class="planning_container_box_step3--num" src="./img/Number (2).png" alt="num">
+                        <img class="planning_container_box_step3--num" src="" alt="">
                         <div class="planning_container_box_step3--texts">
                             <h3 class="planning_container_box_step3--texts--title">Planning your experiences</h3>
                             <p class="planning_container_box_step3--texts--text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus varius. </p>
