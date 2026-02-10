@@ -562,6 +562,9 @@
         margin: 0 auto;
         padding-top: 119px;
         padding-bottom: 116px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
         &--title {
             font-family: DM Sans;
@@ -578,6 +581,182 @@
             max-width: 1162px;
             display: flex;
             flex-direction: column;
+            position: relative;
+
+            &--absolute {
+                position: absolute;
+                top: 0;
+                left: 27px;
+                z-index: 0;
+            }
+
+            &_step1 {
+                width: 100%;
+                max-width: 1141px;
+                display: flex;
+                justify-content: space-between;
+                gap: 44px;
+                align-items: flex-start;
+                padding-bottom: 79px;
+                z-index: 1;
+
+                &--texts {
+                    width: 100%;
+                    max-width: 1038px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 28px;
+                    padding-top: 15px;
+
+                    &--title {
+                        font-family: DM Sans;
+                        font-weight: 700;
+                        font-size: 26.41px;
+                        line-height: 41.08px;
+                        letter-spacing: 0px;
+                        color: #010A20;
+                    }
+
+                    &--text {
+                        font-family: DM Sans;
+                        font-weight: 400;
+                        font-size: 23.47px;
+                        line-height: 38.15px;
+                        letter-spacing: 0px;
+                        color: #15143966;
+                    }
+                }
+            }
+
+            &_step2 {
+                width: 100%;
+                max-width: 1141px;
+                display: flex;
+                justify-content: space-between;
+                gap: 44px;
+                align-items: flex-start;
+                padding-bottom: 80px;
+                z-index: 1;
+
+                &--texts {
+                    width: 100%;
+                    max-width: 1038px;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 15px;
+
+                    &--title {
+                        font-family: DM Sans;
+                        font-weight: 700;
+                        font-size: 26.41px;
+                        line-height: 41.08px;
+                        letter-spacing: 0px;
+                        color: #010A20;
+                        padding-bottom: 28px;
+                    }
+
+                    &--text {
+                        font-family: DM Sans;
+                        font-weight: 400;
+                        font-size: 23.47px;
+                        line-height: 38.15px;
+                        letter-spacing: 0px;
+                        color: #15143966;
+                    }
+
+                    &--bottom {
+                        width: 100%;
+                        max-width: 740px;
+                        display: flex;
+                        align-items: center;
+                        gap: 45px;
+                        padding-top: 93px;
+
+                        &--right {
+                            width: 100%;
+                            max-width: 446px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 12px;
+
+                            &--title {
+                                font-family: DM Sans;
+                                font-weight: 700;
+                                font-size: 26.41px;
+                                line-height: 41.08px;
+                                letter-spacing: 0px;
+                                color: #010A20;
+                            }
+
+                            &--text {
+                                font-family: DM Sans;
+                                font-weight: 400;
+                                font-size: 23.47px;
+                                line-height: 38.15px;
+                                letter-spacing: 0px;
+                                color: #15143966;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_step3 {
+                width: 100%;
+                max-width: 1141px;
+                display: flex;
+                justify-content: space-between;
+                gap: 44px;
+                align-items: flex-start;
+                z-index: 1;
+
+                &--texts {
+                    width: 100%;
+                    max-width: 1038px;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 15px;
+                    align-items: flex-start;
+
+                    &--title {
+                        font-family: DM Sans;
+                        font-weight: 700;
+                        font-size: 26.41px;
+                        line-height: 41.08px;
+                        letter-spacing: 0px;
+                        color: #010A20;
+                        padding-bottom: 28px;
+                    }
+
+                    &--text {
+                        font-family: DM Sans;
+                        font-weight: 400;
+                        font-size: 23.47px;
+                        line-height: 38.15px;
+                        letter-spacing: 0px;
+                        color: #15143966;
+                        padding-bottom: 17px;
+                    }
+
+                    &--button {
+                        width: 100%;
+                        max-width: 211px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: #DD2242;
+                        padding: 18.5px 56px;
+                        border-radius: 122px;
+                        font-family: DM Sans;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 150%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        color: #FFFFFF;
+                    }
+                }
+            }
         }
     }
 }
