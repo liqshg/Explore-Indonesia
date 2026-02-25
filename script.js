@@ -1,70 +1,21 @@
-// const track = document.querySelector('.track');
-// const dots = document.querySelectorAll('.dot');
-// const slidesCount = 5;
-// const visible = 3;
+document.addEventListener('DOMContentLoaded', function() {
+  const openBtn = document.getElementById('openMenu');
+  const closeBtn = document.getElementById('closeMenu');
+  const menu = document.getElementById('sideMenu');
+  const overlay = document.getElementById('menuOverlay');
 
-// let index = 0;
+  function toggleMenu() {
+    menu.classList.toggle('is-open');
+    overlay.classList.toggle('is-visible');
+    // Блокируем скролл страницы, когда меню открыто
+    document.body.style.overflow = menu.classList.contains('is-open') ? 'hidden' : '';
+  }
 
-// function update() {
-//   const shift = (index * 100) / visible;
-//   track.style.transform = `translateX(-${shift}%)`;
-
-//   dots.forEach(d => d.classList.remove('active'));
-//   dots[index].classList.add('active');
-// }
-
-// document.querySelector('.right').onclick = () => {
-//   if (index + visible < slidesCount) {
-//     index += visible;
-//     update();
-//   }
-// };
-
-// document.querySelector('.left').onclick = () => {
-//   if (index - visible >= 0) {
-//     index -= visible;
-//     update();
-//   }
-// };
-
-// dots.forEach((dot, i) => {
-//   dot.onclick = () => {
-//     index = i;
-//     update();
-//   };
-// });
-
-
-  // $('.multiple-items').slick({
-  //   infinite: true,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 3,
-  //   dots: true,
-  //   arrows: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1
-  //       }
-  //     }
-  //   ]
-  // });
-
-  const scrollBtn = document.getElementById('scrollTopBtn');
-
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      scrollBtn.classList.add('show');
-    } else {
-      scrollBtn.classList.remove('show');
-    }
-  });
-
-  scrollBtn.addEventListener('click', () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  });
+  if (openBtn && closeBtn && menu && overlay) {
+    openBtn.addEventListener('click', toggleMenu);
+    closeBtn.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+  } else {
+    console.error("Один из элементов меню не найден. Проверь ID в HTML.");
+  }
+});

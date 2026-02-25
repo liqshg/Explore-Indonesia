@@ -96,6 +96,74 @@
 .header_top_container--box--brgr {
   background: none;
 }
+.header_top--box {
+  width: 100%;
+  max-width: 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_top--box--button {
+  display: none;
+  cursor: pointer;
+}
+.header_top--menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  background: #020C21;
+  display: block;
+  padding-top: 120px;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.45s cubic-bezier(0.77, 0, 0.18, 1), opacity 0.3s ease;
+  will-change: transform;
+  z-index: 1000;
+}
+.header_top--menu--close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 46px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.header_top--menu--close:hover {
+  color: #DD2242;
+}
+.header_top--menu--list {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  list-style: none;
+}
+.header_top--menu.active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+.header_top--menu--link {
+  font-family: DM Sans;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.header_top--menu--link:hover {
+  color: #DD2242;
+}
 .header_main_container {
   width: 100%;
   max-width: 1225px;
@@ -869,7 +937,7 @@
     width: 314px;
     height: 191px;
     position: absolute;
-    bottom: 0;
+    top: 216px;
     left: 0;
     margin-bottom: 40px;
   }
@@ -896,6 +964,18 @@
     padding: 35px 71px 30px 32px;
     margin-bottom: 231px;
     position: relative;
+  }
+  header .header_main_container--video {
+    width: 314px;
+    height: 191px;
+    position: absolute;
+    top: 511px;
+    left: 0;
+    margin-bottom: 40px;
+  }
+  header .header_main_container--video--video {
+    width: 314px;
+    height: 191px;
   }
   main .about_more_container--top--info {
     display: flex;
@@ -1025,8 +1105,6 @@
     grid-column: 1/-1;
     width: 100%;
     max-width: none !important;
-    grid-column-start: 1;
-    grid-column-end: 3;
   }
 }
 @media (max-width: 1200px) {
@@ -1139,11 +1217,26 @@
     width: 100%;
     max-width: 610px;
   }
+  .header_top {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header_top_container {
+    width: 100%;
+    max-width: 88px;
+    padding-right: 10px;
+  }
+  .header_top_container--info {
+    display: none;
+  }
 }
 @media (max-width: 825px) {
   main .explore_numbers_container--box {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 758px) {

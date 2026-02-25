@@ -99,6 +99,86 @@
                 }
             }
         }
+
+        &--box {
+            width: 100%;
+            max-width: 88px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--button {
+                display: none;
+                cursor: pointer;
+            }
+        }
+
+
+        &--menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 50%;
+            background: #020C21;
+            display: block;
+            padding-top: 120px;
+            transform: translateX(100%);
+            opacity: 0;
+            visibility: hidden;
+            transition:
+                transform 0.45s cubic-bezier(.77, 0, .18, 1),
+                opacity 0.3s ease;
+            will-change: transform;
+            z-index: 1000;
+            &--close {
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-family: DM Sans;
+                font-weight: 700;
+                font-size: 28px;
+                line-height: 46px;
+                color: #fff;
+                transition: 0.3s ease-in-out;
+            
+                &:hover {
+                    color: #DD2242;
+                }
+            }
+
+            &--list {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 40px;
+                list-style: none;
+            }
+
+            &.active {
+                transform: translateX(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            &--link {
+                font-family: DM Sans;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 46px;
+                letter-spacing: 0%;
+                text-align: center;
+                color: #fff;
+                transition: 0.3s ease-in-out;
+
+                &:hover {
+                    color: #DD2242;
+                }
+            }
+        }
+    
     }
 
     &_main_container {
@@ -227,3 +307,97 @@
         }
     }
 }
+
+
+
+// /* Кнопка бургера */
+// .burger-btn {
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   width: 35px;
+//   height: 25px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   padding: 0;
+//   position: relative;
+//   z-index: 999; /* Чтобы кнопка всегда была сверху */
+// }
+
+// .burger-btn span {
+//   display: block;
+//   width: 100%;
+//   height: 4px;
+//   background-color: #fff; /* Цвет полосок */
+//   border-radius: 2px;
+// }
+
+// /* Само меню */
+// .side-menu {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 320px; /* Ширина меню */
+//   height: 100vh;
+//   background-color: #0d141c; /* Темный фон как на фото */
+//   z-index: 9999; /* Максимальный приоритет */
+//   transform: translateX(-100%); /* Прячем за экран слева */
+//   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+//   padding: 80px 40px;
+//   box-sizing: border-box;
+// }
+
+// /* Класс для открытия (добавляется через JS) */
+// .side-menu.is-open {
+//   transform: translateX(0);
+// }
+
+// /* Ссылки */
+// .nav-links {
+//   list-style: none;
+//   padding: 0;
+// }
+
+// .nav-links li {
+//   margin-bottom: 30px;
+// }
+
+// .nav-links a {
+//   color: white;
+//   text-decoration: none;
+//   font-size: 26px;
+//   font-weight: 600;
+//   display: block;
+// }
+
+// /* Кнопка закрытия внутри меню */
+// .close-btn {
+//   position: absolute;
+//   top: 20px;
+//   right: 20px;
+//   background: none;
+//   border: none;
+//   color: white;
+//   font-size: 40px;
+//   cursor: pointer;
+// }
+
+// /* Затемнение экрана */
+// .menu-overlay {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(0, 0, 0, 0.7);
+//   opacity: 0;
+//   visibility: hidden;
+//   transition: all 0.4s ease;
+//   z-index: 9998; /* Чуть ниже меню, но выше контента */
+// }
+
+// .menu-overlay.is-visible {
+//   opacity: 1;
+//   visibility: visible;
+// }
